@@ -1,0 +1,65 @@
+.contacto{
+    text-align: center;
+    background-color: $body2;
+    padding: 5rem 1rem 5rem 1rem;
+    h2{
+        font-size: $textoPrimario;
+        margin-bottom: 2rem;
+    }
+    p{
+        font-size: $textoSecundario;
+        margin-bottom: 1rem;
+    }
+    form{
+        @include flexColumn();
+        margin: auto;
+        padding: 1rem;
+        text-align: left;
+        width: 50%;
+        label{
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        input{
+            margin-bottom: 1rem;
+            height: 2.5rem;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            border: 0.1rem solid #808080;
+        }
+        input[type="text"]{
+            font-size: 1rem;
+        }
+        input[type="email"]{
+            font-size: 1rem;
+        }
+        textarea{
+            margin-bottom: 1rem;
+            height: 5rem;
+            font-size: 1.2rem;
+            border-radius: 0.5rem;
+            padding: 0.5rem;
+        }
+        button{
+            @include boton();
+            margin: 2rem 0rem;
+        }
+        #invisible{
+            opacity: 0;
+            font-size: 0.1rem;
+            width: 0.1rem;
+            text-align: center;
+        }
+    } 
+}
+@media(max-width: 576px) {
+    .contacto{
+        h2{
+            font-size: 2.5rem;
+        }
+        form{
+            width: 80%;
+        }
+    }
+}

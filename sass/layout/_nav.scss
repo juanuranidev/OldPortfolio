@@ -1,0 +1,71 @@
+nav{
+    @include flexRow();
+    justify-content: space-around;
+    align-items: center;
+    background-color: $primario;
+    height: 6vh;
+    box-shadow: $boxShadow;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    .icono{
+        color: $body1;
+    }
+
+    ul{
+        @include flexRow();
+        li{
+            margin: 0rem 1rem; 
+            a{
+                font-weight: 700;
+                text-decoration: none;
+                color: $body1;
+                display: block;
+            }
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        .cerrarMenu{
+            display: none;
+            color: $body1;
+        }
+    }    
+
+    .abrirMenu{
+        display: none;
+        color: $body1;
+    }
+}
+
+@media(max-width: 768px) {
+    nav{
+        ul{
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            position: fixed;
+            top: 0rem;
+            text-align: center;
+            background-color: $primario;
+            box-shadow: $boxShadow;
+            width: 100%;
+            li{
+                padding: 1rem;
+                margin: 0rem;
+            }
+            a:hover{
+                text-decoration: none;
+            }
+            .cerrarMenu{
+                display: block;
+                color: $body1;
+                margin: 1rem;
+                cursor: pointer;
+            }
+        }
+        .abrirMenu{
+            display: flex;
+        }
+    }
+}

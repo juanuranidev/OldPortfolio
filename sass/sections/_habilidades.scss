@@ -1,0 +1,44 @@
+.habilidades{
+    text-align: center;
+    padding: 5rem 1rem 0rem 1rem;
+    background-color: $body2;
+    h2{
+        font-size: $textoPrimario;
+        margin-bottom: 5rem;
+    }
+    .divConHabilidades{
+        @include flexRow();
+        justify-content: center;
+        flex-wrap: wrap;
+        div{
+            width: 25%;
+            margin-bottom: 5rem;
+            span{
+                margin-bottom: 1rem;
+            }
+            span:hover{
+                transform: scale(1.2);
+                transition: 0.5s;
+            }
+            h3{
+                font-size: $textoSecundario;
+                font-weight: 700;
+            }
+        }
+    }
+}
+@media(max-width: 768px) {
+    .habilidades{
+        h2{
+            font-size: 2.5rem;
+        }
+        .divConHabilidades{
+            div{
+                width: 33%;
+                h3{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}

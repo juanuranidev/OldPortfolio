@@ -1,0 +1,24 @@
+footer{
+    padding: 1rem;
+    background-color: $primario;
+    text-align: center;
+    .sociales{
+        margin-bottom: 1rem;
+        a{
+            color: $body1;
+            margin-right: 1rem;
+            text-decoration: none;
+        }
+    }
+    .marca{
+        color: $body1;
+        p{
+            color: $body1;
+            a{
+                @extend p;
+                text-decoration: none;
+                font-weight: 700;
+            }
+        }
+    }
+}

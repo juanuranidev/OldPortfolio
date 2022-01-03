@@ -1,0 +1,33 @@
+main{
+    text-align: center;
+    padding: 5rem 1rem;
+    background-color: $body1;
+    h2{
+        font-size: $textoPrimario;
+        margin-bottom: 5rem;
+    }
+    p{
+        font-size: $textoSecundario;
+        margin-bottom: 2rem;
+    }
+}
+@media(max-width: 768px) {
+    main{
+        h2{
+            font-size: 2.5rem;
+        }
+        p{
+            font-size: 1.2rem;
+        }
+        button:hover{
+            @include boton();
+        }
+    }
+}
+@media(max-width: 576px) {
+    main{
+        p{
+            font-size: 1rem;
+        }
+    }
+}

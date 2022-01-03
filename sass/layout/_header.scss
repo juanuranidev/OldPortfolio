@@ -1,0 +1,46 @@
+header{ 
+    height: 94vh;
+    background: linear-gradient(-45deg, #FD9101, #C87AE3, #0D6AC3, $primario);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    box-shadow: $boxShadow;
+    padding: 1rem;
+    // filter: blur(1rem);
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    .contenido{
+        @include flexColumn();
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        height: 90%;
+        h1{
+            font-size: 5rem;
+            margin-bottom: 2rem;
+            color: $body1;
+            text-shadow: $textShadow;
+        }
+        h2{
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            font-weight: 600;
+            color: $body1;
+            text-shadow: $textShadow;
+        }
+        a{      
+            color: $body1;
+            text-shadow: $textShadow;
+        }
+    }
+    
+}

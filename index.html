@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="icon" href="img/reactjs.png">
+    <link rel="stylesheet" href="sass/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://kit.fontawesome.com/afb9e1b8d1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <nav>
+        <a href="index.html" class="icono"><i class="fas fa-bacon fa-2x"></i></a>
+        <ul id="nav">
+            <li class="seccion"><a href="#main">Sobre mi</a></li>
+            <li class="seccion"><a href="#habilidades">Habilidades</a></li>
+            <li class="seccion"><a href="#proyectos">Proyectos</a></li>
+            <li class="seccion"><a href="#contacto">Contacto</a></li>
+            <i class="fas fa-times fa-2x cerrarMenu" id="botonParaCerrarMenu"></i>
+        </ul>
+        <span class="fas fa-bars fa-2x abrirMenu" id="botonParaMostrarMenu"></span>
+    </nav>
+
+    <header>
+        <div class="contenido">
+            <h1>Hola</h1>
+            <h2>Bienvenido a mi portfolio web</h2>
+            <a href="#main"><i class="fas fa-chevron-down fa-4x flecha" id="flecha"></i></a>
+        </div>
+    </header>
+
+    <main class="sobreMi" id="main">
+        <h2>Sobre mi</h2>
+        <p>Hola, mi nombre es Juan y tengo 21 años. Soy un desarrollador Frontend que vive en Córdoba, Argentina. Comencé mi carrera como desarrollador web en el 2021 gracias a Coder House.</p>
+        <p>Mi objetivo a corto plazo es seguir aprendiendo y convertirme en un desarrollador experto en Frontend mientras que mi ojetivo a largo plazo es aprender tanto Backend, para convertirme en un desarrollador Full-Stack, como también algoritmos y estructuras de datos.</p>
+        <p>Actualmente estoy en busca de mi primer empleo en este sector mientras realizo una gran variedad de proyectos personales de distintas dificultades y sigo aprendiendo diariamente.</p>
+    </main>
+
+    <section class="habilidades" id="habilidades">
+        <h2>Habilidades Principales</h2>
+        <div class="divConHabilidades">
+            <div>
+                <span class="fab fa-html5 fa-5x html"></span>
+                <h3>HTML</h3>
+            </div>
+            <div>
+                <span class="fab fa-css3-alt fa-5x css"></span>
+                <h3>CSS</h3>
+            </div>
+            <div>
+                <span class="fab fa-sass fa-5x sass"></span>
+                <h3>SASS</h3>
+            </div>
+            <div>
+                <span class="fab fa-bootstrap fa-5x bootstrap"></span>
+                <h3>Bootstrap</h3>
+            </div>
+            <div>
+                <span class="fab fa-js-square fa-5x javascript"></span>
+                <h3>JavaScript</h3>
+            </div>
+            <div>
+                <span class="far fa-sticky-note fa-5x json"></span>
+                <h3>JSON</h3>
+            </div>
+            <div>
+                <span class="fas fa-book fa-5x jquery"></span>
+                <h3>jQuery</h3>
+            </div>
+            <div>
+                <span class="fab fa-react fa-5x react"></span>
+                <h3>React</h3>
+            </div>
+            <div>
+                <span class="fab fa-github-square fa-5x github"></span>
+                <h3>GitHub</h3>
+            </div>
+            <div>
+                <span class="fab fa-git-alt fa-5x git"></span>
+                <h3>GIT</h3>
+            </div>
+            <div>
+                <span class="fab fa-npm fa-5x npm"></span>
+                <h3>NPM</h3>
+            </div>
+            <div>
+                <span class="fab fa-google fa-5x google"></span>
+                <h3>Google</h3>
+            </div>
+        </div>
+    </section>
+  
+    <section class="proyectos" id="proyectos">
+        <h2>Proyectos</h2>
+        <div class="contenedorDeProyectos">
+            <div class="proyecto">
+                <img src="img/proyectos/tiendagamer.png" alt="Imágen de la página de una tienda gamer">
+                <h3>Tienda Gamer</h3>
+                <div class="tecnologias">
+                    <h4>Principalmente usado:</h4>
+                    <div class="iconos">
+                        <span class="fab fa-html5 fa-2x html"></span>
+                        <span class="fab fa-sass fa-2x sass"></span>
+                        <span class="fab fa-js-square fa-2x javascript"></span>
+                        <span class="far fa-sticky-note fa-2x json"></span>
+                    </div>
+                </div>
+                <div class="links">
+                    <div class="contenedorDeLink">
+                        <h4>Repositorio</h4>
+                        <a href="https://github.com/juanuranidev/tiendagamer" target="_blank"><i class="fab fa-github fa-2x github"></i></a>
+                    </div>
+                    <div class="contenedorDeLink">
+                        <h4>Online</h4>
+                        <a href="#"><i class="fas fa-link fa-2x link"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <img src="img/proyectos/rickandmorty.png" alt="Imágen de la página de Rick and Morty">
+                <h3>Rick and Morty API</h3>
+                <div class="tecnologias">
+                    <h4>Principalmente usado:</h4>
+                    <div>
+                        <span class="fab fa-html5 fa-2x html"></span>
+                        <span class="fab fa-sass fa-2x sass"></span>
+                        <span class="fab fa-js-square fa-2x javascript"></span>
+                        <span class="far fa-sticky-note fa-2x json"></span>
+                    </div>
+                </div>
+                <div class="links">
+                    <div class="contenedorDeLink">
+                        <h4>Repositorio</h4>
+                        <a href="https://github.com/juanuranidev/rickandmortyapi" target="_blank"><i class="fab fa-github fa-2x github"></i></a>
+                    </div>
+                    <div class="contenedorDeLink">
+                        <h4>Online</h4>
+                        <a href="#"><i class="fas fa-link fa-2x link"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <img src="img/proyectos/portfolio.png" alt="Imágen de la página de un cotizador de criptomonedas">
+                <h3>Portfolio</h3>
+                <div class="tecnologias">
+                    <h4>Principalmente usado:</h4>
+                    <div>
+                        <span class="fab fa-html5 fa-2x html"></span>
+                        <span class="fab fa-sass fa-2x sass"></span>
+                        <span class="fab fa-js-square fa-2x javascript"></span>
+                    </div>
+                </div>
+                <div class="links">
+                    <div class="contenedorDeLink">
+                        <h4>Repositorio</h4>
+                        <a href="#"><i class="fab fa-github fa-2x github"></i></a>
+                    </div>
+                    <div class="contenedorDeLink">
+                        <h4>Online</h4>
+                        <a href="#"><i class="fas fa-link fa-2x link"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+        <h2>Contacto</h2>
+        <p>Hablemos un rato...</p>
+        <form id="form" action="" class="form" >
+            <label for="name">Nombre</label>
+                <input name="name"  type="text" id="name" required> 
+            <label for="email">Correo electrónico</label>
+                <input name="email" type="text" id="email" required>
+            <label for="asunto">Asunto</label>
+                <input name="asunto" type="text" id="asunto" required>
+            <label for="message">Mensaje</label>
+                <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+            <button type="submit" id="submit">Enviar mensaje</button>
+           
+          </form>
+   </section>
+
+    <footer>
+        <div class="sociales">
+            <a href="https://github.com/juanuranidev" target="_blank" rel="noopener noreferrer" class="fab fa-github-square fa-4x"></a>    
+        </div>
+        <div class="marca">
+            <p><> by <a href="">Juan</a></p>
+        </div>
+    </footer>
+
+<script src="app/app.js"></script>
+</body>
+</html>

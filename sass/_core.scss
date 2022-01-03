@@ -1,0 +1,53 @@
+// Fuente
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+// Variables
+$primario: #2563eb;
+$hover: #0f3a97;
+$body1: #ffffff;
+$body2: #f5f5f5;
+$textoPrimario: 3rem;
+$textoSecundario: 1.5rem;
+$boxShadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+$textShadow: 0px 4px 3px rgba(0,0,0,0.4),
+0px 8px 13px rgba(0,0,0,0.1),
+0px 18px 23px rgba(0,0,0,0.1);
+
+// Mixings
+// Flex Row
+@mixin flexRow {
+    display: flex;
+    flex-direction: row;
+}
+// Flex Column
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+// Botón
+@mixin boton {
+    background-color: $primario;
+    color: $body1;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1rem 1.2rem;
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: $boxShadow;
+    cursor: pointer;
+}
+
+// Colores de los íconos
+.html{color: #e34f26;}
+.css{color: #1572b6;}
+.sass{color: #cd6799;}
+.bootstrap{color: #563d7c;}
+.javascript{color: #f7df1e;}
+.json{color: #ADD8E6;}
+.jquery{color: #0868ac;}
+.react{color: #61dafb;}
+.github{color: #bd2c00;}
+.git{color: #f05032;}
+.npm{color: #cb3837;}
+.google{color: #f4c20d;}
+.link{color: #4078c0;}
