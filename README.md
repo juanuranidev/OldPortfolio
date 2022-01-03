@@ -1,0 +1,1 @@
+Página web de mi portfolio personal. A medida que voy aprendiendo cosas nuevas la iré actualizando con nuevas funcionalidades hasta poder hacerla nuevamente en ReactJS.
