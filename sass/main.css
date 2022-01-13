@@ -117,11 +117,11 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   background-color: #2563eb;
-  height: 6vh;
   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   position: -webkit-sticky;
   position: sticky;
+  padding: 1rem 0rem;
   top: 0;
   z-index: 100;
 }
@@ -167,21 +167,17 @@ nav .abrirMenu {
 
 @media (max-width: 768px) {
   nav ul {
-    display: none;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     position: fixed;
-    top: 0rem;
+    display: block;
+    top: -100%;
     text-align: center;
     background-color: #2563eb;
     -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     width: 100%;
+    opacity: 0;
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
   }
   nav ul li {
     padding: 1rem;
@@ -195,6 +191,10 @@ nav .abrirMenu {
     color: #ffffff;
     margin: 1rem;
     cursor: pointer;
+  }
+  nav .activo {
+    top: 0rem;
+    opacity: 1;
   }
   nav .abrirMenu {
     display: -webkit-box;

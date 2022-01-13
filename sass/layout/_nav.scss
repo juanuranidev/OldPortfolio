@@ -3,9 +3,9 @@ nav{
     justify-content: space-around;
     align-items: center;
     background-color: $primario;
-    height: 6vh;
     box-shadow: $boxShadow;
     position: sticky;
+    padding: 1rem 0rem;
     top: 0;
     z-index: 100;
     .icono{
@@ -41,15 +41,15 @@ nav{
 @media(max-width: 768px) {
     nav{
         ul{
-            display: none;
-            flex-direction: column;
-            align-items: center;
             position: fixed;
-            top: 0rem;
+            display: block;
+            top: -100%;
             text-align: center;
             background-color: $primario;
             box-shadow: $boxShadow;
             width: 100%;
+            opacity: 0;
+            transition: .2s linear;
             li{
                 padding: 1rem;
                 margin: 0rem;
@@ -63,6 +63,10 @@ nav{
                 margin: 1rem;
                 cursor: pointer;
             }
+        }
+        .activo{
+            top: 0rem;
+            opacity: 1;
         }
         .abrirMenu{
             display: flex;

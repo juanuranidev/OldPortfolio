@@ -5,12 +5,11 @@ let nav = document.getElementById("nav")
 let seccion = document.getElementsByClassName("seccion")
 
 botonParaMostrarMenu.addEventListener('click', () => {
-    nav.style.display="flex"
-    botonParaCerrarMenu.addEventListener('click', () => nav.style.display="none")
-    for(let link of seccion) {
-        link.addEventListener('click', () => nav.style.display="none")
-    }
+    nav.className += "activo"
+    botonParaCerrarMenu.addEventListener('click', () => nav.classList.remove("activo"))
+    for(let link of seccion) {link.addEventListener('click', () => nav.classList.remove("activo"))}
 })
+
 
 // Enviar email
 let form = document.getElementById("form")
