@@ -95,8 +95,8 @@ table {
   color: #cb3837;
 }
 
-.google {
-  color: #f4c20d;
+.firebase {
+  color: #FFA611;
 }
 
 .link {
@@ -176,8 +176,8 @@ nav .abrirMenu {
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     width: 100%;
     opacity: 0;
-    -webkit-transition: .2s linear;
-    transition: .2s linear;
+    -webkit-transition: 0.1s linear;
+    transition: 0.1s linear;
   }
   nav ul li {
     padding: 1rem;

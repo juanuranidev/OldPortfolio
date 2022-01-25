@@ -1,1 +1,1 @@
-Página web de mi portfolio personal. A medida que voy aprendiendo más cosas la iré actualizando con nuevas funcionalidades hasta poder hacerla nuevamente en ReactJS.
+Website of my personal portfolio. As I learn more things i will update it with new features until i can make it again in ReactJS.
