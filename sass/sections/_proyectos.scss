@@ -49,6 +49,9 @@
                         font-weight: 700;    
                         margin-right: 0.5rem;
                     }
+                    a:active{
+                        transform: scale(0.9);
+                    }
                 }    
             }
         }

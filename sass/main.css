@@ -517,6 +517,11 @@ main p, main footer .marca p a, footer .marca p main a {
   margin-right: 0.5rem;
 }
 
+.proyectos .contenedorDeProyectos .proyecto .links .contenedorDeLink a:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
 @media (max-width: 576px) {
   .proyectos h2 {
     font-size: 2.5rem;
