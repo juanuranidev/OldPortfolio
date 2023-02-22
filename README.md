@@ -2,7 +2,7 @@
 My personal portfolio. As I learn more things i will update it with new features until i can make it again in ReactJS.
 
 # Demo
-Soon
+https://oldjuanuranidev.netlify.app/
 
 # Stack
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
